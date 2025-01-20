@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Lucero_Calculator {
+    public static void main(String[] args) {
+
+      Scanner calculator = new Scanner(System.in);
+      int fnum, snum, answer, answer2, answer3, answer4;
+
+      System.out.println("Enter first number: ");
+      fnum = calculator.nextInt();
+      System.out.println("Enter second number: ");
+      snum = calculator.nextInt();
+      
+      answer = fnum + snum;
+      System.out.println("Addition: " + answer);
+      
+      answer2 = fnum - snum;
+      System.out.println("Subtraction: " + answer2);
+      
+      answer3 = fnum * snum;
+      System.out.println("Multiplication: " + answer3);
+      
+      answer4 = fnum / snum;
+      System.out.println("Divison: " + answer4);
+  }
+}
