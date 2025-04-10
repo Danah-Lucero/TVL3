@@ -1,0 +1,44 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Student student1 = new Student("John Doe", 18, 90.0);
+ 
+        student1.displayStudent();
+ 
+        student1.setGrade(95);
+        student1.setGrade(95.5);
+ 
+        student1.displayStudent();
+    }
+}
+
+public class Student {
+    String name;
+    int age;
+    double grade;
+ 
+    public Student(String name, int age, double grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+ 
+    void displayStudent() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+    }
+ 
+    void setGrade(int newGrade) {
+        this.grade = newGrade;
+        System.out.println("Updating grade (int)...");
+        System.out.println("New Grade: " + grade);
+    }
+ 
+    void setGrade(double newGrade) {
+        this.grade = newGrade;
+        System.out.println("Updating grade (double)...");
+        System.out.println("New Grade: " + grade);
+    }
+}
+ 
